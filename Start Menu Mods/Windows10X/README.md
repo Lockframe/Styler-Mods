@@ -166,5 +166,5 @@ The theme can only be imported manually. To do that, follow these steps:
   "controlStyles[50].target": "FontIcon#SearchBoxOnTaskbarSearchGlyph",
   "controlStyles[50].styles[0]": "FontFamily=Segoe MDL2 Assets",
   "controlStyles[50].styles[1]": "Glyph="
-}```
-</details>
+}
+```
