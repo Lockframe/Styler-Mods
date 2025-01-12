@@ -4,7 +4,7 @@ A theme aimed to recreate the Windows 10X start menu.
 
 ⚠️ The profile and power buttons have been removed, so you will need to use Ctrl+Alt+Del or Alt+F4 on the desktop to log out and access the power options.
 
-![Screenshot](screenshot.png)
+![Screenshot](preview.png)
 
 ## Manual installation
 
