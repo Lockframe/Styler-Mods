@@ -4,7 +4,7 @@ A theme aimed to recreate the Windows 10X start menu.
 
 ⚠️ The profile and power buttons have been removed, so you will need to use Ctrl+Alt+Del or Alt+F4 on the desktop to log out and access the power options.
 
-![Screenshot](preview.png)
+![Screenshot](image.png)
 
 ## Manual installation
 
@@ -27,9 +27,12 @@ The theme can only be imported manually. To do that, follow these steps:
   "controlStyles[1].target": "Grid#ShowMoreSuggestions",
   "controlStyles[1].styles[0]": "Visibility=1",
   "controlStyles[2].target": "Grid#SuggestionsParentContainer",
-  "controlStyles[2].styles[0]": "Visibility=1",
+  "controlStyles[2].styles[0]": "Visibility=0",
   "controlStyles[3].target": "Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[3].styles[0]": "Visibility=1",
+  "controlStyles[3].styles[0]": "Visibility=0",
+  "controlStyles[3].styles[1]": "Margin=0,-23,-180,0",
+  "controlStyles[3].styles[2]": "BorderThickness=0,1,0,0",
+  "controlStyles[3].styles[3]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\".5\"/>",
   "controlStyles[4].target": "Button#ShowAllAppsButton",
   "controlStyles[4].styles[0]": "Margin=0,0,80,0",
   "controlStyles[4].styles[1]": "CornerRadius=12",
@@ -47,7 +50,7 @@ The theme can only be imported manually. To do that, follow these steps:
   "controlStyles[8].target": "Grid#MainContent",
   "controlStyles[8].styles[0]": "CornerRadius=3",
   "controlStyles[9].target": "StartMenu.PinnedList",
-  "controlStyles[9].styles[0]": "Height=565",
+  "controlStyles[9].styles[0]": "Height=256",
   "controlStyles[9].styles[1]": "Margin=10,0,0,0",
   "controlStyles[10].target": "TextBlock#PinnedListHeaderText",
   "controlStyles[10].styles[0]": "Margin=16,0,0,0",
@@ -149,7 +152,7 @@ The theme can only be imported manually. To do that, follow these steps:
   "controlStyles[42].target": "FontIcon#SearchBoxOnTaskbarSearchGlyph",
   "controlStyles[42].styles[0]": "FontFamily=Segoe MDL2 Assets",
   "controlStyles[42].styles[1]": "Glyph=",
-  "controlStyles[43].target": "Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid",
+  "controlStyles[43].target": "GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid # ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid",
   "controlStyles[43].styles[0]": "Height=84",
   "controlStyles[43].styles[1]": "Width=100",
   "controlStyles[44].target": "Grid#DroppedFlickerWorkaroundWrapper",
@@ -178,6 +181,17 @@ The theme can only be imported manually. To do that, follow these steps:
   "controlStyles[54].styles[0]": "Margin=0,10,0,-16",
   "controlStyles[55].target": "TextBlock#AllAppsHeading",
   "controlStyles[55].styles[0]": "Margin=17,0,0,0",
+  "controlStyles[56].target": "TextBlock#TopLevelSuggestionsListHeaderText",
+  "controlStyles[56].styles[0]": "Margin=80,25,0,0",
+  "controlStyles[56].styles[1]": "Text=Recent",
+  "controlStyles[57].target": "GridView#RecommendedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper",
+  "controlStyles[57].styles[0]": "Margin=0",
+  "controlStyles[58].target": "GridView#RecommendedList",
+  "controlStyles[58].styles[0]": "Margin=29,0,0,0",
+  "controlStyles[59].target": "GridView#RecommendedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem",
+  "controlStyles[59].styles[0]": "Margin=0,0,109,0",
+  "controlStyles[60].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar",
+  "controlStyles[60].styles[0]": "Margin=0,0,42,0",
   "webContentStyles[0].target": "#qfPreviewPane",
   "webContentStyles[0].styles[0]": "min-width:324px !important",
   "webContentStyles[0].styles[1]": "display: none !important",
